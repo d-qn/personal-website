@@ -104,7 +104,9 @@
 				}
 
 		// Main Sections: Two.
-		
+		  // Change made to have link not displayed as preview
+		  // http://stackoverflow.com/questions/28862687/link-to-external-website-doesnt-work-properly-inside-article-tag
+		  //
 			// Lightbox gallery.
 				$('#two').poptrox({
 					caption: function($a) { return $a.next('h3').text(); },
@@ -112,7 +114,7 @@
 					overlayOpacity: 0.85,
 					popupCloserText: '',
 					popupLoaderText: '',
-					selector: '.work-item a',
+					selector: '.work-item a.image',
 					usePopupCaption: true,
 					usePopupDefaultStyling: false,
 					usePopupEasyClose: false,
